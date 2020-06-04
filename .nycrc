@@ -1,0 +1,20 @@
+{
+  "statements": 57,
+  "branches": 25,
+  "functions": 13,
+  "lines": 75,
+  "reporter": [
+    "cobertura",
+    "lcov",
+    "text-summary"
+  ],
+  "all": true,
+  "check-coverage": true,
+  "cache": false,
+  "include": [
+    "index.js",
+    "bin/**"
+  ],
+  "exclude": [
+  ]
+}
