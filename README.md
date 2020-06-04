@@ -1,3 +1,6 @@
+[![npm version][npm-badge]][npm-link]
+[![Build Status][travis-badge]][travis-link]
+
 # Magic Carpet
 
 Takes care of running your javascript [npm-scripts] and includes tools to make
@@ -67,3 +70,7 @@ runAndExit(`
 
 [npm-scripts]: https://docs.npmjs.com/misc/scripts
 [scripty]: https://www.npmjs.com/package/scripty
+[npm-badge]: https://badge.fury.io/js/magic-carpet.svg
+[npm-link]: https://badge.fury.io/js/magic-carpet
+[travis-badge]: https://travis-ci.org/agirorn/magic-carpet.svg?branch=master
+[travis-link]: https://travis-ci.org/agirorn/magic-carpet
