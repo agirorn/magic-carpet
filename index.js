@@ -29,7 +29,8 @@ const npmRunner = () => (
     ? 'yarn'
     : 'npm'
 );
-const npmLifecycleCommandName = () => `$(${npmRunner()} ${npmLifecycleEvent()})`;
+const npmCommand = () => `${npmRunner()} ${npmLifecycleEvent()}`;
+const npmLifecycleCommandName = () => `$(${npmCommand()})`;
 const runAndExit = (command, runner = npmLifecycleCommandName()) => exit(run(command), runner);
 
 const shellArguments = (argv = process.argv) => {
@@ -41,7 +42,7 @@ const shellArguments = (argv = process.argv) => {
 
 const node = (jsFile, args = shellArguments) => `node ${jsFile}${args()}`;
 const command = () => npmLifecycleEvent().split(':').join(sep);
-const script = cmd => `scripts${sep}${cmd}.js`;
+const script = (cmd) => `scripts${sep}${cmd}.js`;
 
 module.exports = {
   appName,
@@ -52,4 +53,5 @@ module.exports = {
   runAndExit,
   script,
   shellArguments,
+  npmCommand,
 };

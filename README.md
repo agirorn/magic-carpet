@@ -68,6 +68,27 @@ runAndExit(`
 `);
 ```
 
+## npmCommand
+
+The utility npmCommand will get the full npm or yarn command name being invoked.
+This can be useful when printing help screens.
+
+```js
+const { runAndExit, npmCommand } = require('pontus-scripts-runner');
+
+if {process.argv.includes('--help')) {
+  console.log(`
+    ${npmCommand()}
+
+    Some other helpfull information
+  `.trim());
+  process.exit(0);
+}
+
+runAndExit(`
+  echo "normal operation"
+`);
+```
 [npm-scripts]: https://docs.npmjs.com/misc/scripts
 [scripty]: https://www.npmjs.com/package/scripty
 [npm-badge]: https://badge.fury.io/js/magic-carpet.svg
