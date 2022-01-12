@@ -62,7 +62,7 @@ them along to the apps you are calling then you can do that by using the
 `shellArguments` helper in the javascript shell application
 
 ```js
-const { runAndExit, shellArguments } = require('pontus-scripts-runner');
+const { runAndExit, shellArguments } = require('magic-carpet');
 
 runAndExit(`
   yarn workspace workspace-name start ${shellArguments()}
@@ -75,7 +75,7 @@ The utility npmCommand will get the full npm or yarn command name being invoked.
 This can be useful when printing help screens.
 
 ```js
-const { runAndExit, npmCommand } = require('pontus-scripts-runner');
+const { runAndExit, npmCommand } = require('magic-carpet');
 
 if {process.argv.includes('--help')) {
   console.log(`
