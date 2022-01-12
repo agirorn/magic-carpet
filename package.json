@@ -1,6 +1,6 @@
 {
   "name": "magic-carpet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "npm-scripts JS shell runnig simplified like magic",
   "keywords": [
     "npm",
