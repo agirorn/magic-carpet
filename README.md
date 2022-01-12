@@ -41,8 +41,9 @@ npm magic:command
 The runAndExit can be helpful when running simple shell commands one after the
 other.
 
+__file: scripts/magic/command.js__
 ```js
-const { runAndExit } = require('../');
+const { runAndExit } = require('magic-carpet');
 
 runAndExit(`
   echo "Magic Carpet"
